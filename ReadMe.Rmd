@@ -1,0 +1,17 @@
+Getting and Cleaning Data Course Assigment
+========================================================
+
+The script run_analysis.R performs all the steps expected out of this assignment.
+
+
+1. Both the training and test data have been first column combined to ensure that all the observations are assigned to the respetive subjects and activities. It is assumed that the order of observations, activites and subjects in the x/y/subject files are in the proper order.
+
+2. The training and test data is then merged to row-wise to ensure that we have all the 10299 observations.
+
+3. After merger, only the mean and std observations are extracted. These include meanFrequency observations. The angle calculations involving mean observations have not been extracted.
+
+4. The activity codes are replaced with appropriate activity labels.
+
+5. The cleaned data is then aggregated along Subject and Activity dimensions to obtain means of all the extracted observations.
+
+6. The output is written in a text file called "Course_Assignment" in the working directory
